@@ -1,0 +1,45 @@
+.ocean-background {
+    background: linear-gradient(to bottom, #00aaff, #004d99); 
+    background-image: url('../assets/oceanBG.png'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+    overflow: hidden; 
+  }
+  
+
+  @keyframes fish-swim {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100vw); }
+  }
+  
+  .fish {
+    position: absolute;
+    width: 50px; 
+    animation: fish-swim 10s linear infinite; 
+  }
+  
+  h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    color: #ffffff; 
+  }
+  
+  p {
+    font-size: 1.1rem; 
+    color: #ffffff; 
+  }
+  
+  a {
+    color: #fffb17; 
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ffffff; 
+  }
+  
+  .text-light-green {
+    color: #90ee90; 
+  }
+  
+

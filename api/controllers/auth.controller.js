@@ -1,5 +1,6 @@
 import User from '../models/User_model.js'
 import bcryptjs from 'bcryptjs'
+import { errorHandler } from '../utils/error.js';
 
 export const signup = async (req, res, next) => {
     try {
