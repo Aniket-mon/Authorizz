@@ -17,7 +17,7 @@ export const signup = async (req, res, next) => {
         const newUser = new User({ username, email, password: hashedPassword });
         await newUser.save();
 
-        res.status(201).json({ message: 'User created successfully', user: { id: newUser._id, username, email } });
+        res.status(201).json({ message: 'Welcome to Authorizz! You are one of us now.', user: { id: newUser._id, username, email } });
     } catch (error) {
         // server-side error tracking
         console.error('Error in signup:', error);
